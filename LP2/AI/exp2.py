@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
 '''
 Output:
-PS D:\Ayush\College\Sem VI\Lab\AI\Codes> python -u "d:\Ayush\College\Sem VI\Lab\AI\Codes\Assignment_6\exp2.py"
+
 Welcome to the Advanced Medical Expert System!
 Please answer the following questions to receive a diagnosis.
 Do you have a fever?
@@ -98,5 +98,5 @@ Have you lost your taste or smell?
 Enter your answer (yes/no): No
 Based on your symptoms, you may have one of the following conditions:
 - Common Cold
-PS D:\Ayush\College\Sem VI\Lab\AI\Codes>
+
 '''
