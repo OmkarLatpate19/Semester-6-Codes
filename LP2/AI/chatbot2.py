@@ -40,7 +40,6 @@ if __name__ == "__main__":
 
 '''
 Output:
-PS D:\Ayush\College\Sem VI\Lab\AI\Codes> python -u "d:\Ayush\College\Sem VI\Lab\AI\Codes\Assignment_5\chatbot.py"
 Hi, I'm a simple chatbot. Ask me anything!!
 You: Hi                 
 Bot: Hello!
