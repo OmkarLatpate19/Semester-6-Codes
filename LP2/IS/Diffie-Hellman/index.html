@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diffie-Hellman Key Exchange</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #sharedKey {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Diffie-Hellman Key Exchange</h1>
+
+    <form>
+      <div>
+        <label for="prime">Prime Number (p):</label>
+        <input type="text" id="prime" value="">
+      </div>
+      <div>
+        <label for="root">Primitive Root (g):</label>
+        <input type="text" id="root" value="">
+      </div>
+      <div>
+        <label for="aliceSecret">Alice's Secret Number (a):</label>
+        <input type="text" id="aliceSecret" value="">
+      </div>
+      <div>
+        <label for="bobSecret">Bob's Secret Number (b):</label>
+        <input type="text" id="bobSecret" value="">
+      </div>
+    </form>
+
+    <button onclick="performKeyExchange()">Perform Key Exchange</button>
+
+    <div id="sharedKey"></div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
