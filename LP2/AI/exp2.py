@@ -28,7 +28,10 @@ def diagnose():
         "Stomach Flu": ["nausea", "vomiting", "diarrhea"]
     }
 
-    possible_conditions = [condition for condition, symptoms_required in conditions.items() if all(symptoms[symptom] for symptom in symptoms_required)]
+    possible_conditions = []
+    for condition, symptoms_required in conditions.items():
+        if all(symptoms[symptom] for symptom in symptoms_required):
+            possible_conditions.append(condition)
 
     if possible_conditions:
         print("Based on your symptoms, you may have one of the following conditions:")
