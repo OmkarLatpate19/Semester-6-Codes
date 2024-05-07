@@ -10,5 +10,5 @@ hadoop fs -put  <path of input.txt file> /b1/Input
 cd <path of folder>                                                               # (/home/hadoop/Desktop/Wordcount)
 javac -classpath ${HADOOP_CLASSPATH} -d <classes folder path> <java file path>
 jar -cvf b1.jar -C <class folder>                                                  # (classes/ .)
-hadoop jar <jar file path> <class name in java file> <HDFS_Input> <HDFS_Output>
-hadoop dfs -cat <HDFS_Output>/*
+hadoop jar <jar file path> <class name in java file> /b1/Input /b1/Output
+hadoop dfs -cat /b1/Output/*
